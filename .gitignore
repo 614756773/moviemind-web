@@ -41,6 +41,14 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Lock files - choose one package manager
+# If using npm: uncomment package-lock.json, comment out others
+# If using pnpm: uncomment pnpm-lock.yaml, comment out others
+# If using yarn: uncomment yarn.lock, comment out others
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -137,3 +145,33 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Next.js specific
+.next/
+out/
+build/
+dist/
+
+# Turbopack
+.turbo/
+
+# SWC
+.swc/
+
+# IDE and Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
